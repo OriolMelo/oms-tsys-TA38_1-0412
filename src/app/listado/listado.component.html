@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>Listado clientes</h1>
+    <div class="row">
+        <div class="table-responsive">
+            <table class="table">
+                <tbody>
+                    @for(cliente of clientes; track cliente.cif){
+                        <tr>
+                            <td>{{cliente.nombre}}</td>
+                            <td>{{cliente.cif}}</td>
+                            <td>{{cliente.direccion}}</td>
+                            <td>{{cliente.grupo}}</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

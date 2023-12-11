@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <h1>Alta cliente</h1>
+    </div>
+    <br>
+    <form ngNativeValidate>
+        <div class="row mb-3">
+            <div class="col-2"><label for="">Nombre:</label></div>
+            <div class="col-2"><input type="text" class="form-control" [(ngModel)]="nombre" name="nombre" required></div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-2"><label for="">CIF:</label></div>
+            <div class="col-2"><input type="text" class="form-control" [(ngModel)]="cif" name="cif" required></div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-2"><label for="">Dirección:</label></div>
+            <div class="col-2"><input type="text" class="form-control" [(ngModel)]="direccion" name="direccion" required></div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-2"><label for="">Grupo:</label></div>
+            <div class="col">
+                <select [(ngModel)]="grupo" name="grupo">
+                    <option value="Sin definir">Sin definir</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select></div>
+        </div>
+        <div class="row-1">
+            <button type="submit" (click)="guardar()">Guardar</button>
+        </div>
+    </form>
+</div>
